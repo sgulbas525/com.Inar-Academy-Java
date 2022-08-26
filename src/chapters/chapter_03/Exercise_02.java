@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class Exercise_02{
 	public static void main(String[] args){
-		int number1 = (int)(System.currentTimeMillis() % 10);
-		int number2 = (int)(System.currentTimeMillis() / 7 % 10);
-		int number3 = (int)(System.currentTimeMillis() / 14 % 10);
+		int number1 = (int)(Math.random()* 9) + 1;
+		int number2 = (int)(Math.random()* 9) + 1;
+		int number3 = (int)(Math.random()* 9) + 1;
 		Scanner input = new Scanner(System.in);
 
 		System.out.print("What is " + number1 + " + " + number2 + " + " + number3 + "? ");
