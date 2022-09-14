@@ -1,6 +1,6 @@
 public class Exercise04_03 {
     public  static  void  main(String[] args){
-        final double RADIUS = 6_371.01;
+        final double RADIUS = 6371.01;
         double chaX = 35.227085;
         double chaY = - 80.843124;
         double ataX = 33.753746;
