@@ -21,8 +21,8 @@ public class Exercise04_03 {
         double s1 = (dCA + dAS + dCS) / 2;
         double area1 = Math.sqrt(s1 * (s1 - dCA) * (s1 - dAS) * (s1 - dCS));
 
-        double s2 = (dCS + dCF + dFS) / 2;
-        double area2 = Math.sqrt(s2 * (s2 - dCS) * (s2 - dCF) * (s2 - dFS));
+        double s2 = (dFS + dAF + dAS) / 2;
+        double area2 = Math.sqrt(s2 * (s2 - dAS) * (s2 - dAF) * (s2 - dFS));
 
         double totalArea = area1 + area2;
 
