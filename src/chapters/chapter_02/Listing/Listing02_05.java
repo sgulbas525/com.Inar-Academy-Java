@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-	public class DisplayTime {
+	public class Listing02_05 {
 		public static void main(String[] args) {
 			Scanner input = new Scanner(System.in);
 			// Prompt the user for input

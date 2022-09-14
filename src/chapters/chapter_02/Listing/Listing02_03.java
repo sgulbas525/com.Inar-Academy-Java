@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ComputeAverage{
+public class Listing02_03 {
 	public static void main(String[] args){
 		//Create a Scanner object
 		Scanner input = new Scanner(System.in);

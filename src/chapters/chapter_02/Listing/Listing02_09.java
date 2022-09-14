@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-	public class ComputeLoan {
+	public class Listing02_09 {
 		public static void main(String[] args) {
 			// Create a Scanner
 			Scanner input = new Scanner(System.in);

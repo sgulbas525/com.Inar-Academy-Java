@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-        public class ComputeAreaWithConsoleInput {
+        public class Listing02_02 {
                 public static void main(String[] args) {
                         // Create a Scanner object
                         Scanner input = new Scanner(System.in);

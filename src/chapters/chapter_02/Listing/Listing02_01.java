@@ -1,4 +1,4 @@
-public class ComputeArea{
+public class Listing02_01 {
 	public static void main(String[] args){
 		double radius;//Declare radius
 		double area;//Declare area

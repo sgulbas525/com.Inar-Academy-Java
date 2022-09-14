@@ -1,4 +1,4 @@
-public class ShowCurrentTime{
+public class Listing02_07 {
 	public static void main(String[] args){
 		 long totalMilliSeconds = System.currentTimeMillis();
 		 long totalSeconds = totalMilliSeconds / 1000;

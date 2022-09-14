@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-	public class ComputeChange {
+	public class Listing02_10 {
 		public static void main(String[] args) {
 			// Create a Scanner
 			Scanner input = new Scanner(System.in);
