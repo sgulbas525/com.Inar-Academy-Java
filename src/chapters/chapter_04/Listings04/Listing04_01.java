@@ -1,7 +1,7 @@
 package Listings04;
 import java.util.Scanner;
 
-public class Listings04_01 {
+public class Listing04_01 {
 
     public static void main(String[] args) {
          Scanner input = new Scanner(System.in);
