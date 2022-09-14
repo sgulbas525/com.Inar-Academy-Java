@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ChineseZodiac {
+public class Listing03_09 {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 	

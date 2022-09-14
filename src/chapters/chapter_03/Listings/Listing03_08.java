@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Lottery {
+public class Listing03_08 {
 	public static void main(String[] args) {
 	// Generate a lottery number
 	int lottery = (int)(Math.random() * 100);

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TestBooleanOperators {
+public class Listing03_06 {
 	public static void main(String[] args) {
 	// Create a Scanner
 	Scanner input = new Scanner(System.in);

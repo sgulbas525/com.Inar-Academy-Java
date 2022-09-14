@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SubtractionQuiz {
+public class Listing03_03 {
 		public static void main(String[] args) {
 		// 1. Generate two random single-digit integers
 		int number1 = (int)(Math.random() * 10);
