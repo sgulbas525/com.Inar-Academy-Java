@@ -1,3 +1,5 @@
+package Checkpoints03;
+
 public class Checkpoint03_07 {
         public static void main(String[] args){
 		int number = 512 ;

@@ -1,3 +1,5 @@
+package Checkpoints03;
+
 public class Checkpoint03_33 {
 	public static void main(String[] args) {
 		java.util.Scanner input = new java.util.Scanner(System.in);

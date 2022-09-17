@@ -1,3 +1,5 @@
+package Checkpoints03;
+
 public class Checkpoint03_04 {
         public static void main(String[] args){
                 int y = 10 ;

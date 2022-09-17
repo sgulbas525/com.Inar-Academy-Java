@@ -1,3 +1,5 @@
+package Checkpoints03;
+
 import java.util.Scanner;
 
 public class Checkpoint03_34 {

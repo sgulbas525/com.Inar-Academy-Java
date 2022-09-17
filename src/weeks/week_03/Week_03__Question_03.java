@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Question_03{
+public class Week_03__Question_03 {
 	public static void main(String[] args){
 		Scanner input = new Scanner(System.in);
 
