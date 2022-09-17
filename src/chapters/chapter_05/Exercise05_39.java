@@ -4,7 +4,7 @@ public class Exercise05_39 {
         double sales = 30000;
         double salary = 5000;
 
-        while (commision + salary < 30_000) {
+        while (commision + salary <= 30_000) {
             commision = 0;
             commision += 5000 * 0.08;
             commision += 5000 * 0.10;
