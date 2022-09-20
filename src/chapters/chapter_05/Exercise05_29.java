@@ -57,15 +57,18 @@ public class Exercise05_29 {
                 System.out.printf("%7s", " ");
             }
 
+            /** 111   222  333  444 555 666 777
+             *                              --- */
+
             if (m == 1 || m == 3 || m == 5 || m == 7 || m == 8 || m == 10 || m == 12) {
-                for (int d = day, i = 1; i < 32; day++, i++) {
+                for (int i = 1; i < 32; day++, i++) {
                     if (day % 7 == 6)
                         System.out.printf("%7d\n", i);
                     else
                         System.out.printf("%7d", i);
                 }
             } else if (m == 4 || m == 6 || m == 9 || m == 11) {
-                for (int d = day, i = 1; i < 31; day++, i++) {
+                for (int i = 1; i < 31; day++, i++) {
                     if (day % 7 == 6)
                         System.out.printf("%7d\n", i);
                     else
@@ -73,7 +76,7 @@ public class Exercise05_29 {
                 }
             } else {
                 if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)) {
-                    for (int d = day, i = 1; i < 30; day++, i++) {
+                    for (int i = 1; i < 30; day++, i++) {
                         if (day % 7 == 6)
                             System.out.printf("%7d\n", i);
                         else
