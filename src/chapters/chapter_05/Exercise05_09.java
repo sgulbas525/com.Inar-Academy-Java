@@ -13,11 +13,11 @@ public class Exercise05_09 {
         int highestScore = 0;
         String secondHighestStudent = "";
         int secondHighestScore = 0;
-        String tempStudent = "";
-        int tempScore = 0;
+        String tempStudent ;
+        int tempScore ;
 
         for (int i = 0; i < numberOfStudent; i++) {
-            System.out.println("Enter student's name and her/his name: ");
+            System.out.println("Enter student's name and her/his score: ");
             tempStudent = input.next();
             // For invalid name inputs
             for (int j = 0; j < tempStudent.length(); j++) {
@@ -32,6 +32,10 @@ public class Exercise05_09 {
             if (tempScore > 100 || tempScore < 0) {
                 System.out.println("Invalid score!");
                 i--;
+            }
+
+            if (tempScore == highestScore) {
+                highestStudent += " ve " + tempStudent;
             }
 
             if (tempScore > secondHighestScore) {
