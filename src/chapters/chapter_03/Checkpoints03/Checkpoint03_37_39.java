@@ -1,4 +1,4 @@
-package Checkpoints03;
+package chapters.chapter_03.Checkpoints03;
 
 public class Checkpoint03_37_39 {
 	public static void main(String[] args){

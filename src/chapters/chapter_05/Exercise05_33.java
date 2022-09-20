@@ -1,3 +1,5 @@
+package chapters.chapter_05;
+
 public class Exercise05_33 {
     public static void main(String[] args) {
         System.out.print("The perfect numbers are:");

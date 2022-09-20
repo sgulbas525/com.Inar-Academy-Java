@@ -1,3 +1,5 @@
+package chapters.chapter_02.Checkpoints02;
+
 import java.util.Scanner;
 
 	public class Checkpoint02_30{

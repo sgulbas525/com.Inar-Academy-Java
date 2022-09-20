@@ -3,8 +3,6 @@ package Checkpoints06;
 public class Checkpoint06_11_12_13_14 {
     public static void main(String[] args) {
         // Checkpoint06_11
-        /** You pass actual parameter by passing right type of value in right the order.
-         * The actual parameter can have the same name as its formal parameter. */
 
         //Checkpoint06_12
 

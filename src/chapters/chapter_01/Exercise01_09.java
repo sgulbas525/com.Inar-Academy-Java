@@ -1,3 +1,5 @@
+package chapters.chapter_01;
+
 public class Exercise01_09 {
 	public static void main(String[] args) {
 		System.out.println("area of a rectangle with 4.5 width and 7.9 height=");

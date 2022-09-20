@@ -1,3 +1,5 @@
+package chapters.chapter_06;
+
 public class Exercise06_01 {
     public static void main(String[] args) {
         final int NUMBER_PER_LINE = 10;

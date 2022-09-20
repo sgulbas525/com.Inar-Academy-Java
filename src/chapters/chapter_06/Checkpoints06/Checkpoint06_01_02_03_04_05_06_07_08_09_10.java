@@ -94,10 +94,10 @@ public class Checkpoint06_01_02_03_04_05_06_07_08_09_10 {
     //Checkpoint06_09
     public static int method1(int n, int m) {
         n += m;
-        return method2(3, 4);
+        return method2(3);
     }
 
-    public static int method2(int n, int m) {
+    public static int method2(int n) {
         if (n > 0)
             return 1;
         else if (n == 0)

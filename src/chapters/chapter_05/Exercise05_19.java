@@ -1,3 +1,5 @@
+package chapters.chapter_05;
+
 public class Exercise05_19 {
     public static void main(String[] args) {
         for (int i = 1; i <= 8; i++) {

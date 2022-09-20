@@ -1,3 +1,5 @@
+package chapters.chapter_02.Checkpoints02;
+
 public class Checkpoint02_09{
 	public static void main(String[] args){
 //Declare a double variable named miles with initial value 100

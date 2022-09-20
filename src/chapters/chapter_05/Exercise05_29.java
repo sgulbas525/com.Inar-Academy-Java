@@ -80,7 +80,7 @@ public class Exercise05_29 {
                             System.out.printf("%7d", i);
                     }
                 } else {
-                    for (int d = day, i = 1; i < 29; day++, i++) {
+                    for (int i = 1; i < 29; day++, i++) {
                         if (day % 7 == 6)
                             System.out.printf("%7d\n", i);
                         else

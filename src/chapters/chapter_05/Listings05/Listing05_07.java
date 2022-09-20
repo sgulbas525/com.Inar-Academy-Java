@@ -1,4 +1,4 @@
-package Listings05;
+package chapters.chapter_05.Listings05;
 
 public class Listing05_07 {
     /** Masin method */

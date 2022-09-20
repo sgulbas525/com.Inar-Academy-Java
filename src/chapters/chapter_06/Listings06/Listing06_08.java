@@ -1,4 +1,4 @@
-package Listings06;
+package chapters.chapter_06.Listings06;
 
 import java.util.Scanner;
 

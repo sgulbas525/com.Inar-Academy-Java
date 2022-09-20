@@ -1,3 +1,5 @@
+package chapters.chapter_02.Checkpoints02;
+
 public class Checkpoint02_12{
 	public static void main(String[] args){
 		int today = 2;

@@ -1,4 +1,4 @@
-package Checkpoints05;
+package chapters.chapter_05.Checkpoints05;
 
 import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.util.Scanner;

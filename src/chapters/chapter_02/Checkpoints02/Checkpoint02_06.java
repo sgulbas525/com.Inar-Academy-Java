@@ -1,3 +1,5 @@
+package chapters.chapter_02.Checkpoints02;
+
 public class Checkpoint02_06{
 	public static void main(String[] args){
 		//You can't initialize many variables befora declaring them.

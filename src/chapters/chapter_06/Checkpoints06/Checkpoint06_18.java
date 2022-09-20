@@ -1,4 +1,4 @@
-package Checkpoints06;
+package chapters.chapter_06.Checkpoints06;
 
 public class Checkpoint06_18 {
     //Checkpoint06_18

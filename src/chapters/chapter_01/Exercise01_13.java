@@ -1,3 +1,5 @@
+package chapters.chapter_01;
+
 public class Exercise01_13 {
 	public static void main(String[] args) {
 		System.out.println("3.4x + 50.2y = 44.5");

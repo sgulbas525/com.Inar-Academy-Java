@@ -1,3 +1,5 @@
+package chapters.chapter_02.Checkpoints02;
+
 public class Checkpoint02_11{
 	public static void main(String[] args){
 		int a = 56 % 6;

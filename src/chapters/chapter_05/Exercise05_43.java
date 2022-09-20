@@ -1,3 +1,5 @@
+package chapters.chapter_05;
+
 public class Exercise05_43 {
     public static void main(String[] args) {
         int count = 0;

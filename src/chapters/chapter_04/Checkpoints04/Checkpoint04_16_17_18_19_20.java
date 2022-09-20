@@ -1,4 +1,4 @@
-package Checkpoints04;
+package chapters.chapter_04.Checkpoints04;
 
 import com.sun.deploy.uitoolkit.impl.awt.AWTAppletAdapter;
 

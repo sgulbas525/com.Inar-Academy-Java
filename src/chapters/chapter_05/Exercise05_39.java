@@ -1,3 +1,5 @@
+package chapters.chapter_05;
+
 public class Exercise05_39 {
     public static void main(String[] args) {
         double commision = 0;

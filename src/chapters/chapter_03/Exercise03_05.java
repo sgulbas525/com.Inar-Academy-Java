@@ -7,7 +7,7 @@ public class Exercise03_05 {
 		System.out.print("Enter today's day: ");
 		int today = input.nextInt();
 		
-		System.out.print("Enter the number of adys elapsed since today: ");
+		System.out.print("Enter the number of adds elapsed since today: ");
 		int elapsedDays = input.nextInt();
 
 		System.out.print("Today is ");

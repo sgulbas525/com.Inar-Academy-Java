@@ -2,9 +2,6 @@ package Checkpoints06;
 
 public class Checkpoint06_15_16_17 {
     //Checkpoint06_15
-    /** Method overloading : defining a method with same name but with different parameter list.
-     * Yes, it's the defining of overloading.
-     * No, changing the return type doesn't make the method overloaded.*/
 
 
     //Checkpoint06_16

@@ -1,3 +1,5 @@
+package chapters.chapter_02;
+
 import java.util.Scanner;
 public class Exercise02_02 {
 	public static void main(String[] args){

@@ -1,3 +1,5 @@
+package chapters.chapter_04;
+
 public class Exercise04_25 {
     public static void main(String[] args) {
         String plate = "" ;

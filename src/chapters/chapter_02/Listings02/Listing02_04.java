@@ -1,3 +1,5 @@
+package chapters.chapter_02.Listings02;
+
 import java.util.Scanner; //Scanner is in java.util package
 
 public class Listing02_04 {

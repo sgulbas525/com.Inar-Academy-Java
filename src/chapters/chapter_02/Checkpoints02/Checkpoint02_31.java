@@ -1,3 +1,5 @@
+package chapters.chapter_02.Checkpoints02;
+
 public class Checkpoint02_31{
 	public static void main(String[] args){
 		double amount = 5;

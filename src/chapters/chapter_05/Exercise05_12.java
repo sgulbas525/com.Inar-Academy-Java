@@ -1,3 +1,5 @@
+package chapters.chapter_05;
+
 public class Exercise05_12 {
     public static void main(String[] args) {
         int n = 0;

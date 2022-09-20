@@ -1,3 +1,5 @@
+package chapters.chapter_05;
+
 public class Exercise05_24 {
     public static void main(String[] args) {
         double sum = 0;

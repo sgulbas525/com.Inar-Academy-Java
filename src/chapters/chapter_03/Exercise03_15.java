@@ -5,7 +5,7 @@ public class Exercise03_15 {
 		Scanner input = new Scanner(System.in);
 		int lottery = (int)(Math.random() * 900) + 100;
 
-		System.out.print("Enter your guees : ");
+		System.out.print("Enter your guess : ");
 		int guess = input.nextInt();
 		
 		int l1 = lottery % 10;

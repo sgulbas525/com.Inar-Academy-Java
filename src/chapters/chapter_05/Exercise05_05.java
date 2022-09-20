@@ -1,3 +1,5 @@
+package chapters.chapter_05;
+
 public class Exercise05_05 {
     public static void main(String[] args) {
         final double POUNDS_PER_KILOGRAM = 2.2;

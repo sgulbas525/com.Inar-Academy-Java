@@ -1,4 +1,4 @@
-package Listings06;
+package chapters.chapter_06.Listings06;
 
 public class Listing06_04 {
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package chapters.chapter_01;
+
 public class Exercise01_11 {
 	public static void main(String[] args) {
 		System.out.println("Current population is = 312,032,486");

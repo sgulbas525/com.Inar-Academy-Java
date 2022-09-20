@@ -1,3 +1,5 @@
+package chapters.chapter_05;
+
 public class Exercise05_06 {
     public static void main(String[] args) {
         final double KILOMETERS_PER_MILE = 1.609;

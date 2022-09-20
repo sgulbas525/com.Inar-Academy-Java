@@ -1,3 +1,5 @@
+package chapters.chapter_03.Listings03;
+
 import java.util.Scanner;
 
 public class Listing03_06 {

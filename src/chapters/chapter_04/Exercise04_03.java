@@ -1,3 +1,5 @@
+package chapters.chapter_04;
+
 public class Exercise04_03 {
     public  static  void  main(String[] args){
         final double RADIUS = 6371.01;

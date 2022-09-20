@@ -9,11 +9,11 @@ public class Exercise05_44 {
         System.out.print("Enter an integer: ");
         short number = input.nextShort();
 
-        String bits = "";	// Holds the bits
+        StringBuilder bits = new StringBuilder();	// Holds the bits
 
         // Get the 16 bits for the integer
         for (int i = 0; i < 16; i++) {
-            bits = (number & 1) + bits;
+            bits.insert(0, (number & 1));
             number >>= 1;
         }
 

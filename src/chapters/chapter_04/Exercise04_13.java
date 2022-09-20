@@ -1,3 +1,5 @@
+package chapters.chapter_04;
+
 import  java.util.Scanner;
 
 public class Exercise04_13 {

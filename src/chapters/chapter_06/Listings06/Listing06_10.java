@@ -1,4 +1,4 @@
-package Listings06;
+package chapters.chapter_06.Listings06;
 
 public class Listing06_10 {
     /** Generate a random character between ch1 and ch2 */
