@@ -15,19 +15,19 @@ public class Exercise04_15 {
         System.out.print("The corresponding number is ");
         char ch = s.charAt(0);
 
-        if (ch > 'W')
+        if (ch >= 'W')
             System.out.println(9);
-        else if (ch > 'T')
+        else if (ch >= 'T')
             System.out.println(8);
-        else if (ch > 'P')
+        else if (ch >= 'P')
             System.out.println(7);
-        else if (ch > 'M')
+        else if (ch >= 'M')
             System.out.println(6);
-        else if (ch > 'J')
+        else if (ch >= 'J')
             System.out.println(5);
-        else if (ch > 'G')
+        else if (ch >= 'G')
             System.out.println(4);
-        else if (ch > 'D')
+        else if (ch >= 'D')
             System.out.println(3);
         else if (ch >= 'A')
             System.out.println(2);
