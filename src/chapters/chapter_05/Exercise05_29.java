@@ -9,7 +9,7 @@ public class Exercise05_29 {
 
         System.out.print("Enter the first day of " + year + "(0-Sunday, 1-Monday...): ");
         int day = input.nextInt();
-
+// 2    tuesday
         for (int m = 1; m < 13; m++) {
             day %= 7;
             switch (m) {
