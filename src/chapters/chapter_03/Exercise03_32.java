@@ -19,13 +19,13 @@ public class Exercise03_32 {
         System.out.print("(" + x3 + ", " + y3 + ") is on the ");
 
         if (loc > 0)
-			System.out.println("left side of line from (" + x1 + ", " + y1 + ") to (" + x2 + ", " + y2 + ")");
+            System.out.println("left side of line from (" + x1 + ", " + y1 + ") to (" + x2 + ", " + y2 + ")");
 
         else if (loc < 0)
-			System.out.println("right side of line from (" + x1 + ", " + y1 + ") to (" + x2 + ", " + y2 + ")");
-      else
+            System.out.println("right side of line from (" + x1 + ", " + y1 + ") to (" + x2 + ", " + y2 + ")");
 
-        System.out.println("ont he same line from (" + x1 + ", " + y1 + ") to (" + x2 + ", " + y2 + ")");
+        else
+            System.out.println("ont he same line from (" + x1 + ", " + y1 + ") to (" + x2 + ", " + y2 + ")");
     }
 }
 

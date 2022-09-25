@@ -119,7 +119,8 @@ public class Exercise06_34 {
         double m = month;
         int j = year / 100;
         int k = year % 100;
-        int startDay = (int) (q + ((26 * (m + 1)) / 10) + k + (k / 4) + (j / 4) + (5 * j)) % 7;
+        int startDay = (int) (q + ((26 * (m + 1)) / 10) + k +
+                (k / 4) + (j / 4) + (5 * j)) % 7;
 
         return startDay - 1;
 
