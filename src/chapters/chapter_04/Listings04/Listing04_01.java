@@ -1,4 +1,5 @@
-package Listings04;
+package chapters.chapter_04.Listings04;
+
 import java.util.Scanner;
 
 public class Listing04_01 {

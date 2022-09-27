@@ -1,4 +1,4 @@
-package Checkpoints06;
+package chapters.chapter_06.Checkpoints06;
 
 public class Checkpoint06_01_02_03_04_05_06_07_08_09_10 {
     public static void main(String[] args) {
