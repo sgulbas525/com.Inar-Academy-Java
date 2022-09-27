@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/InarAcademy/Java_InarAcademy/src/chapters/chapters.iml" filepath="$PROJECT_DIR$/InarAcademy/Java_InarAcademy/src/chapters/chapters.iml" />
+      <module fileurl="file://$PROJECT_DIR$/InarAcademy/Java_InarAcademy/src/weeks/weeks.iml" filepath="$PROJECT_DIR$/InarAcademy/Java_InarAcademy/src/weeks/weeks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/workspace.iml" filepath="$PROJECT_DIR$/.idea/workspace.iml" />
+    </modules>
+  </component>
+</project>
