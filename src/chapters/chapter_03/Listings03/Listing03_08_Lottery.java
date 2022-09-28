@@ -2,7 +2,7 @@ package chapters.chapter_03.Listings03;
 
 import java.util.Scanner;
 
-public class Listing03_08 {
+public class Listing03_08_Lottery {
 	public static void main(String[] args) {
 	// Generate a lottery number
 	int lottery = (int)(Math.random() * 100);

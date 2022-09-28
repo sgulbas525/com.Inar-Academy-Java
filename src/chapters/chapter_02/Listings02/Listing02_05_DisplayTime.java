@@ -2,7 +2,7 @@ package chapters.chapter_02.Listings02;
 
 import java.util.Scanner;
 
-	public class Listing02_05 {
+	public class Listing02_05_DisplayTime {
 		public static void main(String[] args) {
 			Scanner input = new Scanner(System.in);
 			// Prompt the user for input

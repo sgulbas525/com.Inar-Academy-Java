@@ -2,7 +2,7 @@ package chapters.chapter_04.Listings04;
 
 import java.util.Scanner;
 
-public class Listing04_03 {
+public class Listing04_03_GuessBirthday {
     public static void main(String[] args) {
         String set1 =
                 " 1 3 5 7\n" +

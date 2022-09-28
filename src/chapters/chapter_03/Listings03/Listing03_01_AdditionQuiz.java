@@ -2,7 +2,7 @@ package chapters.chapter_03.Listings03;
 
 import java.util.Scanner;
 
-public class Listing03_01 {
+public class Listing03_01_AdditionQuiz {
 	public static void main(String[] args) {
 		int number1 = (int)(System.currentTimeMillis() % 10);
 		int number2 = (int)(System.currentTimeMillis() / 7 % 10);

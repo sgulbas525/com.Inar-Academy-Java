@@ -2,7 +2,7 @@ package chapters.chapter_02.Listings02;
 
 import java.util.Scanner;
 
-	public class Listing02_08 {
+	public class Listing02_08_SalesTax {
 		public static void main(String[] args){
 			Scanner input = new Scanner(System.in);
 

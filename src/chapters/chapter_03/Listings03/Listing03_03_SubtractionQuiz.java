@@ -2,7 +2,7 @@ package chapters.chapter_03.Listings03;
 
 import java.util.Scanner;
 
-public class Listing03_03 {
+public class Listing03_03_SubtractionQuiz {
 		public static void main(String[] args) {
 		// 1. Generate two random single-digit integers
 		int number1 = (int)(Math.random() * 10);

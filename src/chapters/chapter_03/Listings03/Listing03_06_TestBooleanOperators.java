@@ -2,7 +2,7 @@ package chapters.chapter_03.Listings03;
 
 import java.util.Scanner;
 
-public class Listing03_06 {
+public class Listing03_06_TestBooleanOperators {
 	public static void main(String[] args) {
 	// Create a Scanner
 	Scanner input = new Scanner(System.in);

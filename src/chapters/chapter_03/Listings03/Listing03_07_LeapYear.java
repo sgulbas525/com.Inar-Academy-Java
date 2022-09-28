@@ -2,7 +2,7 @@ package chapters.chapter_03.Listings03;
 
 import java.util.Scanner;
 
-public class Listing03_07 {
+public class Listing03_07_LeapYear {
 	public static void main(String[] args) {
 	// Create a Scanner
 	Scanner input = new Scanner(System.in);

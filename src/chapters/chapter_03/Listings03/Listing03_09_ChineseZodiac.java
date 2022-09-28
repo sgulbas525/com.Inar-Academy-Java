@@ -1,7 +1,7 @@
 package chapters.chapter_03.Listings03;
 
 import java.util.Scanner;
-public class Listing03_09 {
+public class Listing03_09_ChineseZodiac {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 	

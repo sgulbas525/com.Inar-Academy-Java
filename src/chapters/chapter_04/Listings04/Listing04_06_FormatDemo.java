@@ -1,6 +1,6 @@
 package chapters.chapter_04.Listings04;
 
-public class Listing04_06 {
+public class Listing04_06_FormatDemo {
     public static void main(String[] args) {
         // Display the header of the table
         System.out.printf("%-10s%-10s%-10s%-10s%-10s\n", "Degrees", "Radians", "Sine", "Cosine", "Tangent");

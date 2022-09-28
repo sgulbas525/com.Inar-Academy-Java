@@ -1,6 +1,6 @@
 package chapters.chapter_02.Listings02;
 
-public class Listing02_01 {
+public class Listing02_01_ComputeArea {
 	public static void main(String[] args){
 		double radius;//Declare radius
 		double area;//Declare area

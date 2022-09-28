@@ -2,7 +2,7 @@ package chapters.chapter_03.Listings03;
 
 import java.util.Scanner;
 
-public class Listing03_02 {
+public class Listing03_02_SimpleIfDemo {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		

@@ -2,7 +2,7 @@ package chapters.chapter_02.Listings02;
 
 import java.util.Scanner;
 
-	public class Listing02_06 {
+	public class Listing02_06_FahrenheitToCelsius {
 		public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 

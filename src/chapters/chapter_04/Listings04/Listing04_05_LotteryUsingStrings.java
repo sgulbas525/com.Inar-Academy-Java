@@ -2,7 +2,7 @@ package chapters.chapter_04.Listings04;
 
 import java.util.Scanner;
 
-public class Listing04_05 {
+public class Listing04_05_LotteryUsingStrings {
     public static void main(String[] args) {
         // Generate a lottery as a two-digit string
         String lottery = "" + (int) (Math.random() * 10) + (int) (Math.random() * 10);

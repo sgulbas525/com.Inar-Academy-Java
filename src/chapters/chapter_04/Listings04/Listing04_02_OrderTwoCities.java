@@ -2,7 +2,7 @@ package chapters.chapter_04.Listings04;
 
 import java.util.Scanner;
 
-public class Listing04_02 {
+public class Listing04_02_OrderTwoCities {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

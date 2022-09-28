@@ -2,7 +2,7 @@ package chapters.chapter_02.Listings02;
 
 import java.util.Scanner;
 
-        public class Listing02_02 {
+        public class Listing02_02_ComputeAreaWithConsoleInput {
                 public static void main(String[] args) {
                         // Create a Scanner object
                         Scanner input = new Scanner(System.in);

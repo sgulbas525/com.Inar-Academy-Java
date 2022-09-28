@@ -2,7 +2,7 @@ package chapters.chapter_02.Listings02;
 
 import java.util.Scanner;
 
-	public class Listing02_09 {
+	public class Listing02_09_ComputeLoan {
 		public static void main(String[] args) {
 			// Create a Scanner
 			Scanner input = new Scanner(System.in);

@@ -1,6 +1,6 @@
 package chapters.chapter_02.Listings02;
 
-public class Listing02_07 {
+public class Listing02_07_ShowCurrentTime {
 	public static void main(String[] args){
 		 long totalMilliSeconds = System.currentTimeMillis();
 		 long totalSeconds = totalMilliSeconds / 1000;

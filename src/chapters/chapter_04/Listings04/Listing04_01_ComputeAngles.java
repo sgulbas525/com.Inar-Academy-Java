@@ -2,7 +2,7 @@ package chapters.chapter_04.Listings04;
 
 import java.util.Scanner;
 
-public class Listing04_01 {
+public class Listing04_01_ComputeAngles {
 
     public static void main(String[] args) {
          Scanner input = new Scanner(System.in);

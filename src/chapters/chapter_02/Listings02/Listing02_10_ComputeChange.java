@@ -2,7 +2,7 @@ package chapters.chapter_02.Listings02;
 
 import java.util.Scanner;
 
-	public class Listing02_10 {
+	public class Listing02_10_ComputeChange {
 		public static void main(String[] args) {
 			// Create a Scanner
 			Scanner input = new Scanner(System.in);
