@@ -1,7 +1,7 @@
 package chapters.chapter_06;
 
 
-import chapters.chapter_06.Listings06.Listing06_07;
+import chapters.chapter_06.Listings06.Listing06_07_PrimeNumberMethod;
 
 public class Exercise06_10 {
     public static void main(String[] args) {
@@ -10,7 +10,7 @@ public class Exercise06_10 {
         int count = 0;
 
         for (int i = 1; i < 10000; i++) {
-            if (Listing06_07.isPrime(i)) {
+            if (Listing06_07_PrimeNumberMethod.isPrime(i)) {
                 count++;
                 if (count % NUMBER_PER_LINE == 0)
                     System.out.println(i);
