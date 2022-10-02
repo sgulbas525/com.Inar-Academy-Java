@@ -20,6 +20,6 @@ public class Exercise03_01 {
 		if(r == 0)
 		System.out.println("The equation has a root " + r1);
 		if(r < 0)
-		System.out.println("The equation has no ral root");
+		System.out.println("The equation has no real root");
 	}
 }
