@@ -12,9 +12,9 @@ public class Exercise07_24 {
         for (int i = 0; i < minePick.length; i++) {
             while (true) {
                 pickCard(minePick, i);
-                countPick++;
+                countPick++;// Count total pick
                 if (isValid(minePick, i)) {
-                    break;
+                    break;// if pick is valid
                 }
             }
         }
@@ -24,6 +24,7 @@ public class Exercise07_24 {
 
     public static boolean isValid(int[] minePick, int i) {
         for (int j = 0; j < i; j++) {
+          // Compares the last pick with the card that we already picked
             if ((minePick[j] / 13) == (minePick[i] / 13)){
                 return false;
             }
