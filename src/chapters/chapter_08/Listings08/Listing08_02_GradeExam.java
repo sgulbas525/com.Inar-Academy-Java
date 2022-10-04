@@ -1,4 +1,4 @@
-package chapters.chapters_08.Listings08;
+package chapters.chapter_08.Listings08;
 
 public class Listing08_02_GradeExam {
     /* Main method */

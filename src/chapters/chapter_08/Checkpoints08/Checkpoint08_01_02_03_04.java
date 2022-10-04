@@ -1,6 +1,4 @@
-package chapters.chapters_08.Checkpoints08;
-
-import chapters.chapters_08.ProcessingTwoDimensionalArrays;
+package chapters.chapter_08.Checkpoints08;
 
 public class Checkpoint08_01_02_03_04 {
     public static void main(String[] args) {
