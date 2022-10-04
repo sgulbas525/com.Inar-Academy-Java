@@ -19,7 +19,7 @@ public class Checkpoint07_12 {
             deck[i] = deck[index];
             deck[index] = temp;
         }
-        /** INSTEAD OF THIS, CODE THAT IS BELOW THIS
+        /* INSTEAD OF THIS, CODE THAT IS BELOW THIS
          //Display the first four cards
          for (int i = 0; i < 4; i++) {
              String suit = suits[deck[i] / 13];

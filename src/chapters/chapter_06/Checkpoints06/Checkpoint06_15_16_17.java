@@ -6,7 +6,7 @@ public class Checkpoint06_15_16_17 {
 
     //Checkpoint06_16
 
-    /**
+    /*
      * public static void  method(int x){
      * }
      * <p>

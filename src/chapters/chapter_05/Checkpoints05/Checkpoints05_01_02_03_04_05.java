@@ -14,12 +14,14 @@ public class Checkpoints05_01_02_03_04_05 {
         }
         System.out.println((count < 100) + ("\n\n\n\n\n"));
 
-        /**Checkpoint05_02
-         There is a possibility of the guess number being 0 */
+        // Checkpoint05_02
+
+        /*There is a possibility of the guess number being 0 */
 
 
         //Checkpoint05_03
-        /**  A
+
+        /*  A
          int i = 1;
          while (i < 10)
          if (i % 2 == 0)

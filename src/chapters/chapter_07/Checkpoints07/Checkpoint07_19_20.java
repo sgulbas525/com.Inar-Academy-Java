@@ -6,7 +6,7 @@ public class Checkpoint07_19_20 {
     public static void main(String[] args) {
 
         //Checkpoint07_19
-        /**
+        /*
          * public static void print(String... strings, double... numbers)
                -- FALSE because only one variable-length parameter list may be specified in a method
          * public static void print(double... numbers, String name)

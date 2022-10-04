@@ -29,7 +29,7 @@ public class Checkpoint07_08_09_10_11 {
 
 
         //Checkpoint07_09
-        /** It'll throw an ArrayIndexOutOfBoundsException. */
+        // It'll throw an ArrayIndexOutOfBoundsException.
 
 
         //Checkpoint07_10

@@ -4,7 +4,7 @@ public class Checkpoint07_29_30 {
     public static void main(String[] args) {
 
         //Checkpoint07_29
-        /** public static void main(String[] args) can we replaced with belows--->
+        /* public static void main(String[] args) can we replaced with belows--->
         * public static void main(String args[])------------> Yes, we can
         * public static void main(String[] x)---------------> Yes, we can
         */

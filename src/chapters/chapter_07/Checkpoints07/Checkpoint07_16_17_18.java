@@ -4,7 +4,7 @@ public class Checkpoint07_16_17_18 {
     public static void main(String[] args) {
 
         // Checkpoint07_16
-        /** When array is passed to a method it's reference value is passed.
+        /* When array is passed to a method it's reference value is passed.
          * No new array is created
          * Arguments and parameters are pointing the same array */
 

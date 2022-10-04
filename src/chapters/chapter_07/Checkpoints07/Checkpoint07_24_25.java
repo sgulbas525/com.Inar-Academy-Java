@@ -9,7 +9,7 @@ public class Checkpoint07_24_25 {
         Listing07_08_SelectionSort.displayArray(list);
     }
         //Checkpoint07_24
-        /** Omitted */
+        /* Omitted */
 
 
         //Checkpoint07_25

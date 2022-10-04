@@ -11,7 +11,7 @@ public class Exercise06_26 {
                 if (count % NUMBERS_PER_LINE == 0) {
                     System.out.println(number);
                 } else {
-                    System.out.print(number + " ");
+                    System.out.printf("%-6d", number);
                 }
             }
             number++;

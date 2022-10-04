@@ -35,13 +35,15 @@ public class Checkpoint05_08_09_10_11_13_14 {
         System.out.println("count is " + count + "\n\n\n\n\n");
 
 
-        /**Checkpoint05_11
-         for ( ; ; ) {
+        // Checkpoint05_11
+
+        /*for ( ; ; ) {
          Do something
          } IS AN INIFINITE LOOP */
 
 
         //Checkpoint05_13
+
         long sum1 = 0;
         int i1 = 1;
         while (i1 <= 1000) {
@@ -58,8 +60,9 @@ public class Checkpoint05_08_09_10_11_13_14 {
         System.out.println("\n\n\n\n\n");
 
 
-        /**  Checkpoint05_14
-         int count = 0;
+        //  Checkpoint05_14
+
+        /* int count = 0;
          while (count < n) {
          count++;
          } N ITERATIONS
