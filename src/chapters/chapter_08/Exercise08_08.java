@@ -29,8 +29,8 @@ public class Exercise08_08 {
         // Compute distance for every two points
         for (int i = 0; i < points.length; i++) {
             for (int j = i + 1; j < points.length; j++) {
-                double distance = distance(points[i], points[j]);
                 // Find distance
+                double distance = distance(points[i], points[j]);
 
                 if (shortestDistance > distance) {
                     shortestDistance = distance;// Update shortestDistance

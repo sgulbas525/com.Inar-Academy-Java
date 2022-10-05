@@ -12,6 +12,7 @@ public class Exercise08_06 {
         displayTheProcess(matrix1, matrix2, matrixSum);
     }
 
+    // cij = a[i][1] * b[1][j] + a[i][2] * b[2][j] + ... + a[i][n] * b[n][j]
     public static double[][] multiplyMatrix(double[][] matrix1, double[][] matrix2) {
         double[][] matrixResult = new double[matrix1.length][matrix1[0].length];
 

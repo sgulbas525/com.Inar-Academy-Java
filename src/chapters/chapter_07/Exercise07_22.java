@@ -6,8 +6,10 @@ public class Exercise07_22 {
     public static void main(String[] args) {
         int[] chessTable = new int[8];
         int row = 0;
+        int count = 0;
 
         while (row < chessTable.length) {
+            count++;
             if (isThereAPLaceToPutAQueen(chessTable, row)) {
                 putAQueen(chessTable, row);
                 row++;
@@ -15,7 +17,7 @@ public class Exercise07_22 {
                 row = 0;
             }
         }
-        displayChessTable(chessTable);
+        displayChessTable(chessTable, count);
 
     }
 
@@ -78,7 +80,9 @@ public class Exercise07_22 {
 
     }
 
-    public static void displayChessTable(int[] chessTable) {
+    public static void displayChessTable(int[] chessTable, int count) {
+        System.out.println("It takes " + count + " times");
+
         for (int i = 0; i < chessTable.length; i++) {
             System.out.print("|");
             for (int j = 0; j < chessTable[i]; j++) {

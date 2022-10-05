@@ -45,14 +45,14 @@ public class Exercise08_03 {
         for (int i = 0; i < limit; i++) {
             minScore = sortedScores[i];
             minScoresIndex = i;
-
+            // FInd the smaller one and keep it at variables
             for (int j = i + 1; j <= limit; j++) {
                 if (minScore > sortedScores[j]) {
                     minScoresIndex = j;
                     minScore = sortedScores[j];
                 }
             }
-
+            // exchange the location smaller one with that we assumed
             if (minScoresIndex != i) {
                 sortedScores[minScoresIndex] = sortedScores[i];
                 sortedScores[i] = minScore;

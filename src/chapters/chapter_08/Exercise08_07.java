@@ -3,7 +3,7 @@ package chapters.chapter_08;
 public class Exercise08_07 {
     public static void main(String[] args) {
         double[][] points = getPoints();
-        displayTheNearestTwoPoints(points);
+        displayTheClosestTwoPoints(points);
     }
 
     public static double[][] getPoints() {
@@ -14,29 +14,32 @@ public class Exercise08_07 {
         return points;
     }
 
-    public static void displayTheNearestTwoPoints(double[][] points) {
-        double[][] nearestTwoPoints = getTheNearestTwoPoints(points);
+    public static void displayTheClosestTwoPoints(double[][] points) {
+        double[][] nearestTwoPoints = getTheClosestTwoPoints(points);
 
         System.out.println("The nearest points are (" +
                 nearestTwoPoints[0][0] + ", " + nearestTwoPoints[0][1] + ", " + nearestTwoPoints[0][2] + ") " +
                 "and (" + nearestTwoPoints[1][0] + ", " + nearestTwoPoints[1][1] + ", " + nearestTwoPoints[1][2] + ")");
     }
-//Mat.sqrt(2(x2 - x1)2 + (y2 - y1)2 + (z2 - z1)2, 2).
-    public static double[][] getTheNearestTwoPoints(double[][] points) {
-        double[][] nearestTwoPoints = new double[2][3];
+//
+    public static double[][] getTheClosestTwoPoints(double[][] points) {
+        double[][] closestTwoPoints = new double[2][3];
         double distance = Double.MAX_VALUE;
 
-        for (int point1 = 0; point1 < nearestTwoPoints.length - 1; point1++) {
-            for (int point2 = point1 + 1; point2 < nearestTwoPoints[point1].length; point2++) {
+        // Gets the closest two numbers by comparing every combination
+        for (int point1 = 0; point1 < closestTwoPoints.length - 1; point1++) {
+            for (int point2 = point1 + 1; point2 < closestTwoPoints[point1].length; point2++) {
+                // Assign the points to closestTwoPoints
                 if(getDistance(points[point1], points[point2]) < distance){
-                    nearestTwoPoints[0] = points[point1];
-                    nearestTwoPoints[1] = points[point2];
+                    closestTwoPoints[0] = points[point1];
+                    closestTwoPoints[1] = points[point2];
             }
         }
         }
-return nearestTwoPoints;
+return closestTwoPoints;
     }
 
+    // Mat.sqrt(2(x2 - x1)2 + (y2 - y1)2 + (z2 - z1)2, 2).
     public static double getDistance(double[] point1, double[] point2) {
         double distance = Math.sqrt((point2[0] - point1[0]) * (point2[0] - point1[0]) +
                 (point2[1] - point1[1]) * (point2[1] - point1[1]) +

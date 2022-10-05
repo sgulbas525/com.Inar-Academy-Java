@@ -27,7 +27,7 @@ public class Exercise08_05 {
         return matrix;
     }
 
-
+    // c[i][j] = a[i][j] + b[i][j]
     public static double[][] sumMatrix(double[][] matrix1, double[][] matrix2) {
         double[][] matrixResult = new double[3][3];
         for (int row = 0; row < matrixResult.length; row++) {
