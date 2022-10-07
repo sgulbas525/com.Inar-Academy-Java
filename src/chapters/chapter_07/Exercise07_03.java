@@ -21,8 +21,8 @@ public class Exercise07_03 {
             }
 
             // If the array is full, but we are still taking input we must enlarge the size of our array
-            if (index == numbers.length) {
-                resizeArray(numbers);
+            if (index  == numbers.length) {
+               numbers = resizeArray(numbers);
             }
         }
         int[] occurrences = getOccurrences(numbers);
@@ -36,19 +36,19 @@ public class Exercise07_03 {
         // The range of integers will be 1 to 100 so an array with 100 elements will be enough
         //For occurrences we will use the index as integers-1 and increase each input by 1
         int[] integers = new int[100];
-        for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] != -1)
-                integers[numbers[i]]++;
+        for (int number : numbers) {
+            if (number != -1)
+                integers[number]++;
         }
         return integers;
     }
 
-    public static void resizeArray(int[] numbers) {
+    public static int[] resizeArray(int[] numbers) {
         int[] newArray = new int[numbers.length * 2];
         java.util.Arrays.fill(newArray, -1);
         // Copied the full array's elements into our new resized array
         System.arraycopy(numbers, 0, newArray, 0, numbers.length);
-        numbers = newArray;
+        return  newArray;
     }
 
     public static void displayOccurrences(int[] occurrences) {
