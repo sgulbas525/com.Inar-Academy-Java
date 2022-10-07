@@ -37,10 +37,11 @@ public class Exercise07_06 {
         // but we have to look at our numbers dividable with less prime numbers
         for (int i = 0; i < count; i++) {
             // Checking whether the number is dividable with the prime numbers that is less than number
-            if (primeNumbers[i] < Math.sqrt(number))
+            if (primeNumbers[i] <= Math.sqrt(number)) {
                 if (number % primeNumbers[i] == 0) {
                     return false;
                 }
+            }
         }
         return true;
     }
