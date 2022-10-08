@@ -4,7 +4,7 @@ package chapters.chapter_06;
 import java.util.Scanner;
 
 public class Exercise06_34 {
-    /**
+    /*
      * Main method
      */
     public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class Exercise06_34 {
         printMonth(year, month);
     }
 
-    /**
+    /*
      * Print the calendar for a month in a year
      */
     public static void printMonth(int year, int month) {
@@ -33,16 +33,16 @@ public class Exercise06_34 {
         printMonthBody(year, month);
     }
 
-    /**
+    /*
      * Print the month title, e.g., March 2012
      */
     public static void printMonthTitle(int year, int month) {
         System.out.println("        " + getMonthName(month) + " " + year);
         System.out.println("----------------------------");
-        System.out.println(" Sun Mon Tue Wed Thu Fri Sat");
+        System.out.println(" Sat Sun Mon Tue Wed Thu Fri ");
     }
 
-    /**
+    /*
      * Get the English name for month
      */
     public static String getMonthName(int month) {
@@ -88,7 +88,7 @@ public class Exercise06_34 {
         return monthName;
     }
 
-    /**
+    /*
      * Print month body
      */
     public static void printMonthBody(int year, int month) {
@@ -115,20 +115,22 @@ public class Exercise06_34 {
 
 
     public static int getStartDay(int year, int month) {
-        double q = 1;
-        double m = month;
-        int j = year / 100;
-        int k = year % 100;
-        int startDay = (int) (q + ((26 * (m + 1)) / 10) + k +
-                (k / 4) + (j / 4) + (5 * j)) % 7;
+        year = (month == 1 || month == 2) ? year + 1 : year ;
 
-        return startDay - 1;
+        int m = (month == 1 || month == 2) ? 12 + month : month ;
+
+        double q = 1;
+        double j = year / 100.0;
+        int k = year % 100;
+        int startDay = (int)((q + ((26 * (m + 1)) / 10 ) + k + (k / 4) + (j / 4) + (5 * j) ) % 7);
+
+        return startDay - 1 ;
 
     }
 
 
 
-    /**
+    /*
      * Get the number of days in a month
      */
     public static int getNumberOfDaysInMonth(int year, int month) {
@@ -144,10 +146,11 @@ public class Exercise06_34 {
         return 0; // If month is incorrect
     }
 
-    /**
+    /*
      * Determine if it is a leap year
      */
     public static boolean isLeapYear(int year) {
+
         return year % 400 == 0 || (year % 4 == 0 && year % 100 != 0);
     }
 }
