@@ -4,23 +4,32 @@ import java.util.Scanner;
 
 public class Exercise07_05 {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter ten numbers: ");
-        int[] numbers = new int[10];
-        int count = 0;
-        int n;
+        int[] number = getAnArrayFromUser();
 
-        for (int i = 0; i < numbers.length; i++) {
-            n = input.nextInt();
-            if (contains(numbers, n, i)) {
-                numbers[count] = n; // If the input is distinct we assign it to the array
-                count++;        // Counting the distinct numebrs with count variable
+        int[] distinctNumbers = new int[10];
+        int countOfDistinct = 0;
+
+        for (int i = 0; i < number.length; i++) {
+            if (contains(distinctNumbers, number[i], countOfDistinct)) {
+                distinctNumbers[countOfDistinct] = number[1]; // If the input is distinct we assign it to the array
+                countOfDistinct++;        // Counting the distinct numbers with count variable
 
             }
         }
-        displayArray(numbers, count);
+        displayArray(distinctNumbers, countOfDistinct);
 
+    }
+
+    public static int[] getAnArrayFromUser() {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter ten numbers: ");
+        int[] number = new int[10];
+        for (int i = 0; i < number.length; i++) {
+            number[i] = input.nextInt();
+        }
+        return number;
     }
 
     public static void displayArray(int[] numbers, int count) {
@@ -31,10 +40,10 @@ public class Exercise07_05 {
         }
     }
 
-    public static boolean contains(int[] numbers, int n, int j) {
-        for (int i = 0; i < j; i++) {
+    public static boolean contains(int[] numbers, int number, int countOFDistinctNumbers) {
+        for (int i = 0; i < countOFDistinctNumbers; i++) {
             // Whether the array contains number n
-            if (numbers[i] == n)
+            if (numbers[i] == number)
                 return false;
         }
         return true;
