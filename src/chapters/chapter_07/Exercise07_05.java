@@ -12,7 +12,7 @@ public class Exercise07_05 {
 
         for (int i = 0; i < number.length; i++) {
             if (contains(distinctNumbers, number[i], countOfDistinct)) {
-                distinctNumbers[countOfDistinct] = number[1]; // If the input is distinct we assign it to the array
+                distinctNumbers[countOfDistinct] = number[i]; // If the input is distinct we assign it to the array
                 countOfDistinct++;        // Counting the distinct numbers with count variable
 
             }
