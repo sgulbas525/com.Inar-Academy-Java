@@ -9,6 +9,7 @@ public class Exercise07_12 {
         System.out.println("Before reverse method:");
         displayArray(list);
 
+        // int [] reversedArr = reversed(arr);
         reverse(list);
 
         System.out.println("\nAfter reverse method:");
@@ -30,6 +31,11 @@ public class Exercise07_12 {
     }
 
     public static void reverse(double[] list) {
+        /* int[] reversedofArr = new int[10];
+       for (int i = arr.length - 1, reversedArraysIndex = 0; i >= 0 ; i--, reversedArraysIndex++) {
+            reversedofArr[reversedArraysIndex] = arr[i];
+        } */
+
         double temp;
        // Change first-last, 2nd-oneBeforeLast, and it goes like that
         // Working on the same array
