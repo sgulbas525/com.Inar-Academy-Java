@@ -2,7 +2,7 @@ package weeks.week_09;
 
 import java.util.Scanner;
 
-public class reverseArray {
+public class reversedArray {
     public static void main(String[] args) {
         // 1 2 3 4 5 6 2 1 7 52
         // 52 7 1 2 6 5 4 3 2 1
