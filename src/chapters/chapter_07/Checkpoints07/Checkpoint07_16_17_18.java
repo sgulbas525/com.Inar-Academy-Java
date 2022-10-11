@@ -33,9 +33,9 @@ public class Checkpoint07_16_17_18 {
 
     public static void reverse(int[] list) {
         int[] newList = new int[list.length];
-        // It won't reverse that array since
-        // it'll execute during the array's length and that will reverse twice
-        // which means turning where it starts
+        // Since of scope of variable, hte new array can't be assigned to the list in main method.
+        // For that we must return that array, or make changes on our array that we use as parameter
+        // while invoking this method
         for (int i = 0; i < list.length; i++)
             newList[i] = list[list.length - 1 - i];
 
