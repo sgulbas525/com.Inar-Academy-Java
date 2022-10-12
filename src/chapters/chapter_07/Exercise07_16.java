@@ -9,10 +9,10 @@ public class Exercise07_16 {
 
         int[] list = new int[NUMBER_OF_ELEMENTS];
         for (int i = 0; i < list.length; i++) {
-            list[i] = (int) (Math.random() * 1_000_000);
+            list[i] = (int) (Math.random() * Integer.MAX_VALUE);
         }
 
-        int key = (int) (Math.random() * 1_000_000);
+        int key = (int) (Math.random() * Integer.MAX_VALUE);
         estimateTimeForLinearSearch(list, key);
         estimateTimeForBinarySearch(list, key);
     }
