@@ -3,6 +3,11 @@ package chapters.chapter_07;
 import java.util.Scanner;
 // Can be solved better
 public class Exercise07_15 {
+  // 1 5 4 7 8 1 2 5
+  // count = 5 ;
+  // 1 5 7 8 4 2 0 0
+
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         final int NUMBER_OF_NUMBERS = 10;
