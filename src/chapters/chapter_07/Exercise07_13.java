@@ -1,6 +1,10 @@
 package chapters.chapter_07;
 
 public class Exercise07_13 {
+    // getRandom(1, 5 , 78 , 12 , 78, 98, 12) --------  getRandom(new int[]{1, 25 , 54, 89})
+
+    // public static int getRandom(int[] numbers)
+
     public static int getRandom(int... numbers) {
         int number = 0;
         boolean isInNumbers = true;// For checking our number is whether inside the number array
