@@ -22,9 +22,10 @@ public class Exercise08_17 {
     public static boolean[] checkBanks(double[][] banks, double limit) {
         double asset;
         boolean[] unsafeBanks = new boolean[banks.length];// assign false to the unsafe banks index
-
+        boolean hasAnyChange;
         // Have to check amount of banks according to banks that become unsafe
-        for (int count = 0; count < banks.length; count++) {
+        while (true) {
+            hasAnyChange = true;
             for (int i = 0; i < banks.length; i++) {
                 asset = banks[i][0];
 
@@ -37,19 +38,20 @@ public class Exercise08_17 {
                 // If the banks is unsafe assign false
                 if (asset < limit) {
                     unsafeBanks[i] = true;
+                    hasAnyChange = false;
                 }
             }
+            if (hasAnyChange)
+                break;
         }
         return unsafeBanks;
     }
 
 
-
-
     public static void displayUnsafeBanks(boolean[] unsafeBanks) {
         System.out.print("Unsafe banks are ");
         for (int i = 0; i < unsafeBanks.length; i++) {
-            if (unsafeBanks[i]){
+            if (unsafeBanks[i]) {
                 System.out.print(i + " ");
             }
         }
@@ -63,7 +65,7 @@ public class Exercise08_17 {
 
         double[] borrowers = new double[borrower * 2 + 1];
 
-        System.out.println("Enter the balance of bank " + i +": ");
+        System.out.println("Enter the balance of bank " + i + ": ");
         borrowers[0] = input.nextDouble();
 
         System.out.println("Enter the banks and their debt's amount to bank " + i + ": ");
