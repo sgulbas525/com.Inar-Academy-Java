@@ -24,8 +24,8 @@ public class Exercise08_17 {
         boolean[] unsafeBanks = new boolean[banks.length];// assign false to the unsafe banks index
         boolean hasAnyChange;
         // Have to check amount of banks according to banks that become unsafe
-        while (true) {
-            hasAnyChange = true;
+        for (int b = 0; b < banks.length; b++) {
+
             for (int i = 0; i < banks.length; i++) {
                 asset = banks[i][0];
 
@@ -41,8 +41,6 @@ public class Exercise08_17 {
                     hasAnyChange = false;
                 }
             }
-            if (hasAnyChange)
-                break;
         }
         return unsafeBanks;
     }
