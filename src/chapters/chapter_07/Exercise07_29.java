@@ -13,22 +13,20 @@ public class Exercise07_29 {
 
     public static int[] pickCards() {
         int sum = 0;
-        int[] myPick = new int[5];
-        int counter = 0;
+        int[] myPick = new int[4];
+
         while (sum != 24) {
-            for (int i = 0; i < myPick.length - 1; i++) {
+            for (int i = 0; i < myPick.length; i++) {
                 myPick[i] = (int) (Math.random() * 52);
             }
             sum = getSum(myPick);
-            counter++;
         }
-        myPick[4] = counter;
         return myPick;
     }
 
     public static int getSum(int[] myPick) {
         int sum = 0;
-        for (int i = 0; i < myPick.length - 1; i++) {
+        for (int i = 0; i < myPick.length; i++) {
             sum += myPick[i] % 13 == 0 ? 13 : myPick[i] % 13;
         }
         return sum;
@@ -38,10 +36,8 @@ public class Exercise07_29 {
         String[] suits = {"Spades", "Heart", "Diamonds", "Clubs"};
         String[] ranks = {"King", "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen"};
 
-        for (int i = 0; i < myPick.length - 1; i++) {
+        for (int i = 0; i < myPick.length; i++) {
             System.out.println(ranks[myPick[i] % 13] + " of " + suits[myPick[i] / 13]);
         }
-
-        System.out.println("You have " + myPick[4] + " times picked four cards.");
     }
 }
