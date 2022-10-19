@@ -2,7 +2,7 @@ package weeks.week_09;
 
 import java.util.Scanner;
 
-public class isUniqueWithArrays {
+public class IsUniqueWithArrays {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

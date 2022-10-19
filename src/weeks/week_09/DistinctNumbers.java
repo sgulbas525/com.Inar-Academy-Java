@@ -2,12 +2,12 @@ package weeks.week_09;
 
 import java.util.Scanner;
 
-public class distinctNumbers {
+public class DistinctNumbers {
     // 1 1 1 1 1 1 1 1 1
     // 1 2 3 4 5 6 7 8 9 10
     // 1 2 3 1 5 2 4 7 8 9
     // distinctNumber ------> 1 2 3 5
-    // counDistinctNumber - 3
+    // countDistinctNumber - 3
     public static void main(String[] args) {
 
         int[] numbers = getFromUser();

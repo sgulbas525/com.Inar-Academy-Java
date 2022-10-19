@@ -2,7 +2,7 @@ package weeks.week_09;
 
 import java.util.Scanner;
 
-public class isSorted {
+public class IsSorted {
     public static void main(String[] args) {
         // 42 5 8 96 31 475 16 45
         //15 23 35 46 58 67
