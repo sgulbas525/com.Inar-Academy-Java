@@ -13,15 +13,14 @@ public class Exercise07_29 {
 
     public static int[] pickCards() {
         int sum = 0;
-        int[] myPick = new int[5];
-        int counter = 0;
+        int[] myPick = new int[5];// Will count in myPick[4]
 
         while (sum != 24) {
             for (int i = 0; i < myPick.length - 1; i++) {
                 myPick[i] = (int) (Math.random() * 52);
             }
             sum = getSum(myPick);
-            counter++;
+            myPick[4]++;
         }
         return myPick;
     }
