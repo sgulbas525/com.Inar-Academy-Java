@@ -4,6 +4,7 @@ public class Checkpoint09_17_18_19 {
     public static void main(String[] args) {
 
         // Checkpoint09_17
+
         /* f is an instance of Class F
             System.out.println(f.i);  -------> can access
             System.out.println(f.s);  -------> can access
@@ -16,7 +17,10 @@ public class Checkpoint09_17_18_19 {
          */
 
 
+
+
         // Checkpoint09_18
+
         /*public class Test {
             int count;
             public static void main(String[] args) {
@@ -38,7 +42,10 @@ public class Checkpoint09_17_18_19 {
 
 
 
+
+
         // Checkpoint09_19
+
         /*
         * An instance method or variable cannot be accessed from a static method
         * An static method or variable can be access from an instance method

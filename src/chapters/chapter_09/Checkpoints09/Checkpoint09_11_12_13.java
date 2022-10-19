@@ -14,6 +14,8 @@ public class Checkpoint09_11_12_13 {
         ShowErrors class don't have a constructor with an argument
         */
 
+
+
                 // B
         /* public class ShowErrors {
               public static void main(String[] args) {
@@ -23,6 +25,8 @@ public class Checkpoint09_11_12_13 {
                }
           ShowErrors class don't have the x method
          */
+
+
 
                 // C
         /* public class ShowErrors {
@@ -35,6 +39,8 @@ public class Checkpoint09_11_12_13 {
           There will occur a NullPointerException,
           because we try to invoke a method by a variable that references null
          */
+
+
 
                 // D
         /* public class ShowErrors {
@@ -54,7 +60,10 @@ public class Checkpoint09_11_12_13 {
 
 
 
+
+
         // Checkpoint09_12
+
         /* class Test {
               public static void main(String[] args) {
                 A a = new A();
@@ -83,7 +92,9 @@ public class Checkpoint09_11_12_13 {
 
 
 
+
         // Checkpoint09_13
+
         /* public class A {
             boolean x;
             public static void main(String[] args) {

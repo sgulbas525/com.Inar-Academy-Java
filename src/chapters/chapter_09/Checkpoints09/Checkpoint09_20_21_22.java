@@ -4,6 +4,7 @@ public class Checkpoint09_20_21_22 {
     public static void main(String[] args) {
 
         // Checkpoint09_21
+
         /*
         Accessor(Setter) : The method that we use for reach/get the private data field
         Mutator(Getter)  : The method that we use for changing the value of the private data field
@@ -14,6 +15,7 @@ public class Checkpoint09_20_21_22 {
 
 
         // Checkpoint09_21
+
         /* To prevent data from being tampered and to make class easy to maintain,
          are the benefits of data field encapsulation.
          */
@@ -23,6 +25,7 @@ public class Checkpoint09_20_21_22 {
 
 
         // Checkpoint09_22
+
         /* public class Circle {
              private double radius = 1;
              // Find the area of this circle
