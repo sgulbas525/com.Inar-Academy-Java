@@ -7,6 +7,7 @@ public class Exercise09_08 {
         fan1.setRadius(10);
         fan1.setColor("Yellow");
         fan1.setOn(true);
+
         System.out.println(fan1.toString());
 
 System.out.println("--------------------");
