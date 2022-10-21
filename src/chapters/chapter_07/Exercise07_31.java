@@ -20,6 +20,7 @@ public class Exercise07_31 {
         }
     }
 
+
     public static int[] merge(int[] list1, int[] list2) {
         int[] mergedList = new int[list1.length + list2.length];
         // Since we start at the beginning index to compare the smallest element we have to sort arrays

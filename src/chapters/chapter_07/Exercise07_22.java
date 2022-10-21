@@ -28,7 +28,7 @@ public class Exercise07_22 {
         // Turns into false the places that can't be queen put
         for (int i = 0; i < row; i++) {
             checkChessTable[chessTable[i]] = false;
-            if ((row - i + chessTable[i]) < 8) {
+            if (( chessTable[i] + row - i) < 8) {
                 checkChessTable[row - i + chessTable[i]] = false;
             }
             if ((chessTable[i] - (row - i)) > 0) {
