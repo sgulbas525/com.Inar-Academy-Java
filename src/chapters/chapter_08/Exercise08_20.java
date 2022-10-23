@@ -84,6 +84,7 @@ public class Exercise08_20 {
                     "disk at column (0-6): ");
             int col = input.nextInt();
 
+
             if (col < 0 || board[0].length <= col) {
                 System.out.println("Invalid column!");
                 continue;
@@ -99,6 +100,12 @@ public class Exercise08_20 {
         }
 
     }
+
+
+    public static boolean isFull(int col, char[][] board) {
+        return (board[0][col] == 'R' || board[0][col] == 'Y');
+    }
+
 
     public static void displayBoard(char[][] board) {
         for (int row = 0; row < board.length; row++) {
