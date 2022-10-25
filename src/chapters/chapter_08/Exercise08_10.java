@@ -24,20 +24,14 @@ public class Exercise08_10 {
     }
 
     public static int getTheLargestRow(int[][] matrix) {
-        int count1s = 0;
-        int maxOccurrences;
-        int indexRowOfMaxOccurrence;
-
-        for (int col = 0; col < matrix.length; col++) {
-            if (matrix[0][col] == 1)
-                count1s++;
-        }
-
-        maxOccurrences = count1s;
-        indexRowOfMaxOccurrence = 0;
+        int count1s ;
+        int maxOccurrences = Integer.MIN_VALUE;
+        int indexRowOfMaxOccurrence = -1;
 
 
-        for (int row = 1; row < matrix.length; row++) {
+
+
+        for (int row = 0; row < matrix.length; row++) {
             count1s = 0;
             for (int col = 0; col < matrix.length; col++) {
                 if (matrix[row][col] == 1) {
@@ -53,20 +47,13 @@ public class Exercise08_10 {
     }
 
     public static int getTheLargestColumn(int[][] matrix) {
-        int count1s = 0;
-        int maxOccurrences;
-        int indexColOfMaxOccurrence;
-
-        for (int row = 0; row < matrix.length; row++) {
-            if (matrix[row][0] == 1)
-                count1s++;
-        }
-
-        maxOccurrences = count1s;
-        indexColOfMaxOccurrence = 0;
+        int count1s;
+        int maxOccurrences = Integer.MIN_VALUE;
+        int indexColOfMaxOccurrence = -1;
 
 
-        for (int col = 1; col < matrix.length; col++) {
+
+        for (int col = 0; col < matrix.length; col++) {
             count1s = 0;
             for (int row = 0; row < matrix.length; row++) {
                 if (matrix[row][col] == 1) {
