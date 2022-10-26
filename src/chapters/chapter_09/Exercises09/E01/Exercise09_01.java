@@ -1,4 +1,4 @@
-package chapters.chapter_09.Exercises09;
+package chapters.chapter_09.Exercises09.E01;
 
 public class Exercise09_01 {
     public static void main(String[] args) {
@@ -16,25 +16,3 @@ public class Exercise09_01 {
 }
 
 
-class Rectangle {
-    public double width;
-    public double height;
-
-    public Rectangle() {
-        width = 1;
-        height = 1;
-    }
-
-    public Rectangle(double newWidth, double newHeight) {
-        width = newWidth;
-        height = newHeight;
-    }
-
-    public double getArea() {
-        return width * height;
-    }
-
-    public double getPerimeter() {
-        return 2 * (width + height);
-    }
-}

@@ -1,4 +1,6 @@
-package chapters.chapter_09.Exercises09;
+package chapters.chapter_09.Exercises09.E12;
+
+import chapters.chapter_09.Exercises09.E11.LinearEquation;
 
 import java.util.Scanner;
 
