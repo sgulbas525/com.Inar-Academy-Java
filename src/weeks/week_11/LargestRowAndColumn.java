@@ -1,6 +1,6 @@
 package weeks.week_11;
 
-public class MentorSession08_10 {
+public class LargestRowAndColumn {
     public static void main(String[] args) {
         int[][] matrix = getAMatrix();
         fillTheMatrix(matrix);

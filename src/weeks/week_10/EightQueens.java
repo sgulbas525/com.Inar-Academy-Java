@@ -1,6 +1,6 @@
 package weeks.week_10;
 
-public class MentorSession_Queens {
+public class EightQueens {
     /*
     0 Q _ _ _ _ _ _ _
     1 _ _ Q _ _ _ _ _

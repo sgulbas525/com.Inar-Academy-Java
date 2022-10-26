@@ -2,7 +2,7 @@ package weeks.week_11;
 
 import java.util.Scanner;
 
-public class MentorSession10_15 {
+public class SameLine {
     // (x1 - x0)*(y2 - y0) - (x2 - x0)*(y1 - y0) = 0
     public static void main(String[] args) {
         double[][] points = getFromUser();
