@@ -2,7 +2,7 @@ package chapters.chapter_10.Listings10;
 
 public class Listing10_07_TestStackOfIntegers {
     public static void main(String[] args) {
-        Listing10_08_StackOfIntegers stack = new Listing10_08_StackOfIntegers();
+        StackOfIntegers stack = new StackOfIntegers();
 
         for (int i = 0; i < 10; i++) {
             stack.push(i);
