@@ -1,15 +1,15 @@
 package chapters.chapter_10.Listings10;
 
-public class Listing10_08_StackOfIntegers {
+public class StackOfIntegers {
     private int[] elements;
     private int size;
     private static int DEFAULT_CAPACITY = 16;
 
-    public Listing10_08_StackOfIntegers() {
+    public StackOfIntegers() {
         this(DEFAULT_CAPACITY);
     }
 
-    public Listing10_08_StackOfIntegers(int capacity) {
+    public StackOfIntegers(int capacity) {
         elements = new int[capacity];
     }
 
