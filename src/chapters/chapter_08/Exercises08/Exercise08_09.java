@@ -10,7 +10,7 @@ public class Exercise08_09 {
         boolean XTurn = true;
         boolean isItDraw = true;
 
-        while (!isOver(table)) {
+        while (!isFull(table)) {
             displayTable(table);
             promptThePLayerTicOrToe(table, XTurn);
             if (checkWins(table)) {
@@ -37,7 +37,7 @@ public class Exercise08_09 {
         }
     }
 
-    public static boolean isOver(char[][] table) {
+    public static boolean isFull(char[][] table) {
         for (int r = 0; r < table.length; r++) {
             for (int c = 0; c < table[r].length; c++) {
                 if (table[r][c] == ' ') {
@@ -96,23 +96,21 @@ public class Exercise08_09 {
 
     public static boolean checkRows(char[][] table){
         for (int r = 0; r < table.length; r++) {
-            if (table[r][0] != ' ') {
                 for (int c = 0; c < table[r].length - 1; c++) {
-                    if (table[r][c] != table[r][c + 1])
+                    if (table[r][0] != ' ' && table[r][c] != table[r][c + 1])
                         return false;
                 }
             }
-        }
+
         return true;
     }
 
     public static boolean checkCol(char[][] table) {
         for (int c = 0; c < table.length; c++) {
-            if (table[c][0] != ' ') {
                 for (int r = 0; r < table[r].length - 1; r++) {
-                    if (table[r][c] != table[r + 1][c])
+                    if (table[c][0] != ' ' && table[r][c] != table[r + 1][c])
                         return false;
-                }
+
             }
         }
         return true;
