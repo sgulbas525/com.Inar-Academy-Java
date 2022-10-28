@@ -49,66 +49,91 @@ public class Exercise08_09 {
     }
 
     public static boolean checkWins(char[][] table) {
+        return (checkRows(table) || checkCol(table) ||
+                checkMajorDiagonal(table) || checkSubDiagonal(table));
 
-        // Checking Rows & Columns
+    }
+
+    public static void displayTable ( char[][] table){
+                for (int row = 0; row < table.length; row++) {
+                    System.out.println("-------------");
+                    for (int col = 0; col < table[row].length; col++) {
+                        System.out.print("| " + table[row][col] + " ");
+                    }
+                    System.out.println("|");
+                }
+                System.out.println("-------------");
+            }
+
+            public static void promptThePLayerTicOrToe ( char[][] table, boolean XTurn){
+                Scanner input = new Scanner(System.in);
+
+                while (true) {
+                    System.out.print("Enter a row (0, 1, 2) for player ");
+                    System.out.print(XTurn ? "X:" : "Y:");
+                    int row = input.nextInt();
+
+                    System.out.print("Enter a col (0, 1, 2) for player ");
+                    System.out.print(XTurn ? "X:" : "Y:");
+                    int col = input.nextInt();
+
+                    // For avoiding ArrayOuOfBounds
+                    if (0 > col || col > 2 || 0 > row || row > 2) {
+                        System.out.println("Please to another place!");
+                        continue;
+                    }
+
+                    // For avoiding replace a place that has been already filled
+                    if (table[row][col] == ' ') {
+                        table[row][col] = (XTurn ? 'X' : 'Y');
+                        break;
+                    }
+
+                    System.out.println("Please to another place!");
+                }
+            }
+
+
+    public static boolean checkRows(char[][] table){
         for (int r = 0; r < table.length; r++) {
-            if (table[r][0] != ' ' && table[r][0] == table[r][1] && table[r][0] == table[r][2]) {
-                return true;
+            if (table[r][0] != ' ') {
+                for (int c = 0; c < table[r].length - 1; c++) {
+                    if (table[r][c] != table[r][c + 1])
+                        return false;
+                }
             }
-            if (table[0][r] != ' ' && table[0][r] == table[1][r] && table[0][r] == table[2][r]) {
-                return true;
+        }
+        return true;
+    }
+
+    public static boolean checkCol(char[][] table) {
+        for (int c = 0; c < table.length; c++) {
+            if (table[c][0] != ' ') {
+                for (int r = 0; r < table[r].length - 1; r++) {
+                    if (table[r][c] != table[r + 1][c])
+                        return false;
+                }
             }
         }
+        return true;
+    }
 
-        // Checks major diagonal
-        if (table[0][0] != ' ' && table[0][0] == table[1][1] && table[0][0] == table[2][2]) {
-            return true;
+    public static boolean checkMajorDiagonal(char[][] table) {
+        for (int rAndC = 0; rAndC < table.length - 1; rAndC++) {
+            if (table[rAndC][rAndC] != ' ' && table[rAndC][rAndC] != table[rAndC + 1][rAndC + 1]){
+                return false;
+            }
         }
-        // Checks sub-diagonal
-        if (table[0][2] != ' ' && table[0][2] == table[1][1] && table[0][2] == table[2][0]) {
-            return true;
+        return true;
+    }
+
+    public static boolean checkSubDiagonal(char[][] table) {
+        for (int r = 0, c = table.length - 1; r < table.length - 1; r++, c--) {
+            if (table[r][c] != ' ' && table[r][c] != table[r + 1][c - 1]){
+                return false;
+            }
         }
-
-
         return false;
     }
 
-    public static void displayTable(char[][] table) {
-        for (int row = 0; row < table.length; row++) {
-            System.out.println("-------------");
-            for (int col = 0; col < table[row].length; col++) {
-                System.out.print("| " + table[row][col] + " ");
-            }
-            System.out.println("|");
-        }
-        System.out.println("-------------");
-    }
-
-    private static void promptThePLayerTicOrToe(char[][] table, boolean XTurn) {
-        Scanner input = new Scanner(System.in);
-
-        while (true) {
-            System.out.print("Enter a row (0, 1, 2) for player ");
-            System.out.print(XTurn ? "X:" : "Y:");
-            int row = input.nextInt();
-
-            System.out.print("Enter a col (0, 1, 2) for player ");
-            System.out.print(XTurn ? "X:" : "Y:");
-            int col = input.nextInt();
-
-            // For avoiding ArrayOuOfBounds
-            if (0 > col || col > 2 || 0 > row || row > 2) {
-                System.out.println("Please to another place!");
-                continue;
-            }
-
-            // For avoiding replace a place that has been already filled
-            if (table[row][col] == ' ') {
-                table[row][col] = (XTurn ? 'X' : 'Y');
-                break;
-            }
-
-            System.out.println("Please to another place!");
-        }
-    }
 }
