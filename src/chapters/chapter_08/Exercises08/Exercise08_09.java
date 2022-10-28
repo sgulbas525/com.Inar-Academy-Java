@@ -8,15 +8,25 @@ public class Exercise08_09 {
         char[][] table = new char[3][3];
         fill(table, ' ');
         boolean XTurn = true;
+        boolean isItDraw = true;
 
-        while (isOver(table)) {
+        while (!isOver(table)) {
             displayTable(table);
             promptThePLayerTicOrToe(table, XTurn);
+            if (checkWins(table)) {
+                displayTable(table);
+                System.out.println((XTurn ? "X" : "Y") + " player won");
+                isItDraw = false;
+                break;
+            }
             XTurn = !XTurn;
         }
 
-        displayTable(table);
-        System.out.println(!XTurn ? "X" : "Y" + " player won");
+        if (isItDraw) {
+            displayTable(table);
+            System.out.println("Game is over! It's draw!");
+        }
+
     }
 
     public static void fill(char[][] table, char ch) {
@@ -28,28 +38,39 @@ public class Exercise08_09 {
     }
 
     public static boolean isOver(char[][] table) {
+        for (int r = 0; r < table.length; r++) {
+            for (int c = 0; c < table[r].length; c++) {
+                if (table[r][c] == ' ') {
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
+
+    public static boolean checkWins(char[][] table) {
 
         // Checking Rows & Columns
-        for (int i = 0; i < table.length; i++) {
-            if (table[i][0] != ' ' && table[i][0] == table[i][1] && table[i][0] == table[i][2]) {
-                return false;
+        for (int r = 0; r < table.length; r++) {
+            if (table[r][0] != ' ' && table[r][0] == table[r][1] && table[r][0] == table[r][2]) {
+                return true;
             }
-            if (table[i][0] != ' ' && (table[0][i] == table[1][i] && table[0][i] == table[2][i])) {
-                return false;
+            if (table[0][r] != ' ' && table[0][r] == table[1][r] && table[0][r] == table[2][r]) {
+                return true;
             }
         }
 
         // Checks major diagonal
-        if (table[0][0] != ' ' && (table[0][0] == table[1][1] && table[0][0] == table[2][2])) {
-            return false;
+        if (table[0][0] != ' ' && table[0][0] == table[1][1] && table[0][0] == table[2][2]) {
+            return true;
         }
         // Checks sub-diagonal
-        if (table[0][2] != ' ' && (table[0][2] == table[1][1] && table[0][2] == table[2][0])) {
-            return false;
+        if (table[0][2] != ' ' && table[0][2] == table[1][1] && table[0][2] == table[2][0]) {
+            return true;
         }
 
 
-        return true;
+        return false;
     }
 
     public static void displayTable(char[][] table) {
