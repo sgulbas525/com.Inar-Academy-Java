@@ -17,6 +17,7 @@ public class Exercise07_21 {
         printBuildupOfBalls(slots, numberOfBalls);
     }
 
+    // LLRLLLL
     public static void printSlotsHistogram(String way) {
         System.out.println(way);
     }
@@ -30,7 +31,7 @@ public class Exercise07_21 {
             for (int j = 0; j < slots.length - 1; j++) {
                 leftOrRight = (int) (Math.random() * 2);
 
-                if (leftOrRight % 2 == 0)
+                if (leftOrRight == 0)
                     way += 'R';
                 else
                     way += 'L';
@@ -72,7 +73,7 @@ public class Exercise07_21 {
         }
     }
 
-    private static int findTheGreatestBallNumberInASlot(int[] slots) {
+    public static int findTheGreatestBallNumberInASlot(int[] slots) {
         int maxBalls = 0;
         for (int i = 0; i < slots.length; i++) {
             maxBalls = (slots[i] > maxBalls) ? slots[i] : maxBalls;
