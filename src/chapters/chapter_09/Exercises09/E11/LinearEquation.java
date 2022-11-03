@@ -43,7 +43,7 @@ public class LinearEquation {
     }
 
     public boolean isSolvable() {
-        return ((getA() * getD()) - (getB() * getC())) == 0;
+        return getA() * getD() - getB() * getC() != 0;
     }
 
     public double getX() {

@@ -14,7 +14,7 @@ public class Exercise09_11 {
     public static void display(LinearEquation equation) {
         if (equation.isSolvable()) {
             System.out.println("For the equation x is " +
-                    equation.getX() + " adn y is " + equation.getY());
+                    equation.getX() + " and y is " + equation.getY());
         } else
             System.out.println("The equation has no root");
     }

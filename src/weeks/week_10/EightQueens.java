@@ -4,13 +4,20 @@ public class EightQueens {
     /*
     0 Q _ _ _ _ _ _ _
     1 _ _ Q _ _ _ _ _
-    2 _ _ _ _ Q _ _ _----_ _ _ _
-    3 _ _ _ _ _ _ Q _
+    2 _ _ _ _ _ _ _ _----_ _ _ _
+    3 _ _ _ __ _ Q _
     4 _ Q _ _ _ _ _ _   i = 1 qP = 2
-    5 X _ _ _ _ _ Q _  chessTable[i] + (row - i) --> 6
-    6 _ _ _ X _ _ _ _ i = 3 qp =6
+    5 _ _ _ _ _ _ Q _  chessTable[i] + (row - i) --> 6
+    6 X _ _ _ _ _ _ _ i = 3 qp =6
     7                   chessTable[i] - (row - i) ---> 3
  */
+
+
+
+
+    /*           0 1 2 3 4 5 6 7
+    chessTable = 5 7 2
+     */
     public static void main(String[] args) {
         int[] chessTable = new int[8];
         int row = 0;
