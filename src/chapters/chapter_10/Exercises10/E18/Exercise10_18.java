@@ -21,8 +21,17 @@ public class Exercise10_18 {
 
     }
 
-    public static boolean isPrime(BigInteger number) {
-    //TODO
-        return false;
+    public static boolean isPrime(BigInteger b){
+        BigInteger stop = b.divide(new BigInteger("2")).add(BigInteger.ONE);
+        BigInteger divisor = new BigInteger("2");
+        BigInteger zero = new BigInteger("0");
+        while (divisor.compareTo(stop) != 0) {
+            if (b.remainder(divisor).compareTo(zero) == 0) {
+                return false;
+            }
+            divisor = divisor.add(BigInteger.ONE);
+        }
+        return true;
+
     }
 }
