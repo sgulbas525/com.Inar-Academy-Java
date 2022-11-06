@@ -16,9 +16,10 @@ public class MyString1 {
     }
 
     public MyString1 substring(int begin, int end) {
-        if (begin < 0 || end > length() || begin > end)
+        if (begin < 0 || end > length() || begin > end) {
             System.out.println("Invalid substring parameters!");
-
+            System.exit(1);
+        }
         char[] c = new char[end - begin];
         for (int indexChars = begin, indexC = 0; indexChars < end; indexChars++, indexC++) {
             c[indexC] = chars[indexChars];
