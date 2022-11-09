@@ -3,6 +3,7 @@ package chapters.chapter_10.Exercises10.E09;
 import java.util.Arrays;
 
 public class Course {
+
     private String courseName;
     private String[] students = new String[100];
     private int numberOfStudents;

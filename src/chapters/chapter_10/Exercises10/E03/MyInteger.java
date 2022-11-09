@@ -61,15 +61,15 @@ public class MyInteger {
 
 
     public static boolean isPrime(MyInteger num) {
-        return num.isPrime();
+        return isPrime(num.getValue());
     }
 
     public static boolean isEven(MyInteger num) {
-        return num.isEven();
+        return isEven(num.getValue());
     }
 
     public static boolean isOdd(MyInteger num) {
-        return num.isOdd();
+        return isOdd(num.getValue());
     }
 
     public boolean equals(int n) {

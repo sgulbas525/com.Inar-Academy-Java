@@ -22,16 +22,23 @@ public class Exercise10_18 {
     }
 
     public static boolean isPrime(BigInteger b){
-        BigInteger stop = b.divide(new BigInteger("2")).add(BigInteger.ONE);
-        BigInteger divisor = new BigInteger("2");
-        BigInteger zero = new BigInteger("0");
-        while (divisor.compareTo(stop) != 0) {
-            if (b.remainder(divisor).compareTo(zero) == 0) {
+        if(b.equals(BigInteger.ONE) || b.equals(BigInteger.ZERO))
+            return false;
+
+        if (b.equals(new BigInteger(2 + "")))
+            return true;
+
+        if (b.divide(new BigInteger(2 + "")).equals(BigInteger.ZERO))
+
+            return false;
+
+        BigInteger divisor = new BigInteger("3");
+        while (divisor.compareTo(b.divide(new BigInteger(2 + ""))) <= 0) {
+            if (b.remainder(divisor).equals(BigInteger.ZERO)) {
                 return false;
             }
             divisor = divisor.add(BigInteger.ONE);
         }
         return true;
-
     }
 }
