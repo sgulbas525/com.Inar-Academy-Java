@@ -3,7 +3,7 @@ package chapters.chapter_10.Exercises10.E05;
 public class StackOfIntegers {
     private int[] elements;
     private int size;
-    private static int DEFAULT_CAPACITY = 16;
+    private static final int DEFAULT_CAPACITY = 16;
 
     public StackOfIntegers() {
         this(DEFAULT_CAPACITY);
