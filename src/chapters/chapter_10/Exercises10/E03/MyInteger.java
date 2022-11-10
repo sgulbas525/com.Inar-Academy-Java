@@ -86,16 +86,17 @@ public class MyInteger {
 
 
     public static int parseInt(char[] arr) {
-        return parseInt(new String(arr));
+        //return parseInt(new String(arr));
 
-        /* int n = 0;
+        int num = 0;
         int v;
-        for (int i = arr.length - 1, p = 0; i <= 0; i--, p++) {
-            v = (int) (arr[i] - '0');
-            n += Math.pow(10, p) * v;
+        for (int i = arr.length - 1, p = 0; i >= 0; i--, p++) {
+            // Cast inti int automatically because ve assign the result to an int variable
+            v = arr[i] - '0';
+            num += Math.pow(10, p) * v;
         }
 
-        return n;*/
+        return num;
     }
 
 
