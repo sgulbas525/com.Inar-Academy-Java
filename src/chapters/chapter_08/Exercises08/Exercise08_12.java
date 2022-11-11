@@ -6,7 +6,7 @@ public class Exercise08_12 {
     public static void main(String[] args) {
 
 
-        double[] statusAndIncome = getFromUSer();
+        double[] statusAndIncome = getFromUser();
 
         double tax = getTax(statusAndIncome);
 
@@ -14,7 +14,7 @@ public class Exercise08_12 {
 
     }
 
-    public static double[] getFromUSer() {
+    public static double[] getFromUser() {
         Scanner input = new Scanner(System.in);
 
         double[] statusAndIncome = new double[2];
