@@ -20,6 +20,7 @@ public class Exercise11_15 {
             double y2 = points.get(i - 3);
             sum += ((x1 * y2) - (y1 * x2));
         }
+        sum += (points.get(points.size() - 2) * points.get(1)) - (points.get(points.size() - 1) * points.get(0));
         return Math.abs(sum / 2);
     }
 

@@ -8,12 +8,14 @@ public class MyTriangle2D {
     private MyPoint p3;
 
     public MyTriangle2D() {
-        this(0, 0, 1, 1, 2, 5);
+
+      //  this(0, 0, 1, 1, 2, 5);
+    this(new MyPoint(0,0), new MyPoint(1,1), new MyPoint(2,5));
     }
 
-    public MyTriangle2D(double p1X, double p1Y, double p2X, double p2Y, double p3X, double p3Y) {
+  /*  public MyTriangle2D(double p1X, double p1Y, double p2X, double p2Y, double p3X, double p3Y) {
         this(new MyPoint(p1X, p1Y), new MyPoint(p2X, p2Y), new MyPoint(p3X, p3Y));
-    }
+    }*/
 
 
     public MyTriangle2D(MyPoint p1, MyPoint p2, MyPoint p3) {
