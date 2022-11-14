@@ -14,7 +14,7 @@ public class Checkpoint12_27_28_29 {
 
     // Checkpoint12_28
     /*
-    File file = new File("c:\\blablabla\\Blabla")
+    File file = new File("c:\\blablabla\\Blabla\\Bla")
     file.exists();
     file.delete();
     file.renameTO(File f);
