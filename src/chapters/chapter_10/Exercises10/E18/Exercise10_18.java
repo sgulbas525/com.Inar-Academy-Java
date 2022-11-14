@@ -28,7 +28,7 @@ public class Exercise10_18 {
         if (b.equals(new BigInteger(2 + "")))
             return true;
 
-        if (b.divide(new BigInteger(2 + "")).equals(BigInteger.ZERO))
+        if (b.remainder(new BigInteger(2 + "")).equals(BigInteger.ZERO))
 
             return false;
 
