@@ -2,7 +2,7 @@ package chapters.chapter_12.Listings12;
 
 import java.util.Scanner;
 
-public class Listing_02_QuotientWithIf {
+public class Listing12_02_QuotientWithIf {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

@@ -2,7 +2,7 @@ package chapters.chapter_12.Listings12;
 
 import java.util.Scanner;
 
-public class Listing_04_QuotientWithException {
+public class Listing12_04_QuotientWithException {
     public static int quotient(int number1, int number2) {
         if (number2 == 0)
             throw new ArithmeticException("Divisor cannot be zero!");

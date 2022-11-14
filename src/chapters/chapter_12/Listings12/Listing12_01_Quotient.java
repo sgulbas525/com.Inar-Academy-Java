@@ -2,7 +2,7 @@ package chapters.chapter_12.Listings12;
 
 import java.util.Scanner;
 
-public class Listing_01_Quotient {
+public class Listing12_01_Quotient {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

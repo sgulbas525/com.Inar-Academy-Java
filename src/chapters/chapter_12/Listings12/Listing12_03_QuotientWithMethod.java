@@ -2,7 +2,7 @@ package chapters.chapter_12.Listings12;
 
 import java.util.Scanner;
 
-public class Listing_03_QuotientWithMethod {
+public class Listing12_03_QuotientWithMethod {
 
     public static int quotient(int number1, int number2) {
         if (number2 == 0){
