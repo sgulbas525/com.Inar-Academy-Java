@@ -6,7 +6,7 @@ public class Listing12_11_TestCircleWithCustomException {
             new CircleWithCustomException(5);
             new CircleWithCustomException(-5);
             new CircleWithCustomException(0);
-        } catch (Listing11_09_InvalidRadiusException ex) {
+        } catch (Listing12_10_InvalidRadiusException ex) {
             System.out.println(ex);
         }
 
@@ -23,12 +23,12 @@ class CircleWithCustomException {
     private static int numberOfObjects = 0;
 
     // Construct a circle with radius 1
-    public CircleWithCustomException() throws Listing11_09_InvalidRadiusException {
+    public CircleWithCustomException() throws Listing12_10_InvalidRadiusException {
         this(1.0);
     }
 
     // Construct a circle with a specified radius
-    public CircleWithCustomException(double newRadius) throws Listing11_09_InvalidRadiusException {
+    public CircleWithCustomException(double newRadius) throws Listing12_10_InvalidRadiusException {
         setRadius(newRadius);
         numberOfObjects++;
     }
@@ -39,11 +39,11 @@ class CircleWithCustomException {
     }
 
     // Set a new radius
-    public void setRadius(double newRadius) throws Listing11_09_InvalidRadiusException {
+    public void setRadius(double newRadius) throws Listing12_10_InvalidRadiusException {
         if (newRadius >= 0)
             this.radius = radius;
         else
-            throw new Listing11_09_InvalidRadiusException(newRadius);
+            throw new Listing12_10_InvalidRadiusException(newRadius);
     }
 
     // Return numberOfObjects
