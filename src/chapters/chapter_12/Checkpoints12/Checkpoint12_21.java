@@ -22,3 +22,4 @@ public class Checkpoint12_21 {
         statement4: Yes, statement5: No.
 
      */
+}
