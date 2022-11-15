@@ -1,9 +1,12 @@
 package chapters.chapter_11.Exercises11.E03;
 
-import chapters.chapter_09.Exercises09.E07.Account;
 
 public class CheckingAccount extends Account {
     private double overdraftLimit;
+
+    public CheckingAccount() {
+    overdraftLimit = 100;
+    }
 
     public CheckingAccount(int newId, double newBalance, double overdraftLimit) {
         super(newId, newBalance);
@@ -14,7 +17,7 @@ public class CheckingAccount extends Account {
     public void withdraw(double amount) {
         if (getBalance() - amount >= 0 - overdraftLimit) {
             setBalance(getBalance() - amount);
-        }else{
+        } else {
             System.out.println("Out of limits!");
         }
     }

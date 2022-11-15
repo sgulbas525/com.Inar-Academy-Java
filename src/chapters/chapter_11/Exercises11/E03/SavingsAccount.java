@@ -2,8 +2,11 @@ package chapters.chapter_11.Exercises11.E03;
 
 
 public class SavingsAccount extends Account {
+    public SavingsAccount() {
+    }
 
     public SavingsAccount(int newId, double newBalance) {
+
         super(newId, newBalance);
     }
 
@@ -11,7 +14,7 @@ public class SavingsAccount extends Account {
     public void withdraw(double amount) {
         if (getBalance() - amount >= 0) {
             setBalance(getBalance() - amount);
-        }else{
+        } else {
             System.out.println("You don't have $" + amount + " in your account");
         }
     }

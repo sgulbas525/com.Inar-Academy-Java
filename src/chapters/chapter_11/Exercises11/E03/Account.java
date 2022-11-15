@@ -8,7 +8,7 @@ public class Account {
     private double annualInterestRate;
     private Date dateCreated;
 
-    public Account(int j) {
+    public Account() {
        /* id = 0;
         balance = 0;
         annualInterestRate = 0;You may write these but these default value is already 0 */
