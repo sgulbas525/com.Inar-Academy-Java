@@ -3,9 +3,8 @@ package chapters.chapter_06.Listings06;
 import java.util.Scanner;
 
 public class Listing06_08_Hex2Dec {
-    /**
-     * Main method
-     */
+    //Main method
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
