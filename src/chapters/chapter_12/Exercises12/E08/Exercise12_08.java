@@ -13,8 +13,8 @@ public class Exercise12_08 {
                 System.out.println("The decimal value for hex number " + hex + " is " +
                         hexToDecimal(hex.toUpperCase()));
                 break;
-            } catch (HexFormatException ex) {
-                System.out.println("It is not a hex number!");
+            } catch (Exception ex) {
+                System.out.println("Input is not a hex number!");
 
             }
         }
