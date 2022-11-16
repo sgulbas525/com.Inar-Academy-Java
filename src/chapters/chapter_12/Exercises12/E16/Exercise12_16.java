@@ -32,19 +32,20 @@ public class Exercise12_16 {
     }
 
 
-    private static void replaceWords(File sourceFile, String oldWord, File targetFile, String newWord) throws Exception{
+    private static void replaceWords(File sourceFile, String oldWord, File targetFile, String newWord) throws Exception {
         String s = "";
+        StringBuilder sb1 = new StringBuilder();
         try (
                 Scanner input = new Scanner(sourceFile);
                 PrintWriter output = new PrintWriter(targetFile)
         ) {
             while (input.hasNext()) {
-                s += input.nextLine() + "\n";
+                s = input.nextLine();
+                sb1.append(s.replaceAll(oldWord, newWord) + "\n");
             }
 
-           s = s.replaceAll(oldWord, newWord);
 
-            output.print(s);
+            output.print(sb1);
         }
     }
 }

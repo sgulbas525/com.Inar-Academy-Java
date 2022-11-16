@@ -18,20 +18,21 @@ public class Exercise12_11 {
 
         File file = new File(args[1]);
         String s = "";
+        StringBuilder sb1 = new StringBuilder();
         try (
                 Scanner input = new Scanner(file)
         ) {
             while (input.hasNext()) {
-                s += input.nextLine() + "\n";
+                s = input.nextLine();
+                sb1.append(s.replaceAll(args[0] + " ", "") + "\n");
             }
-            s = s.replaceAll(args[0] + " ", "");
         }
 
 
         try (
                 PrintWriter output = new PrintWriter(file)
         ) {
-            output.print(s);
+            output.print(sb1);
 
         }
     }
