@@ -6,8 +6,7 @@ import java.util.Scanner;
 
 // If you cannot run the program from cmd,
 // you can try it on a notepad document that you paste a code from your framework
-// Example for try: File file = new File(documentsPath)
-
+// Example for try: File file = new File("C:\\Users\\Serhat\\Desktop\\document.txt")
 public class Exercise12_12 {
     public static void main(String[] args) throws Exception {
         if (args.length != 1) {
