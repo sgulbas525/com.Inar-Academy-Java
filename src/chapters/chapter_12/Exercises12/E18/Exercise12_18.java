@@ -11,12 +11,12 @@ import java.util.Scanner;
 // Example for try: File file = new File("C:\\Users\\Serhat\\Desktop\\document.txt")
 public class Exercise12_18 {
     public static void main(String[] args) throws Exception {
-       if (args.length != 1) {
+       /*if (args.length != 1) {
             System.out.println("Usage: Exercise12_18 srcRootDirectroy");
             System.exit(1);
-        }
+        }*/
 
-        File directory = new File(args[0]);
+        File directory = new File("C:\\Users\\Serhat\\Desktop\\deneme2");
         if (!directory.exists() || !directory.isDirectory()) {
             if (!directory.exists()) {
                 System.out.println(directory.getName() + " is not exists!");
@@ -38,7 +38,7 @@ public class Exercise12_18 {
                     if (files[i].isDirectory()) {
                         directories.add(files[i]);
                     }
-                    if (files[i].isFile()) {
+                    if (files[i].isFile() && files[i].getName().endsWith(".java")) {
                         insertPackageName(files[i]);
                     }
                 }
