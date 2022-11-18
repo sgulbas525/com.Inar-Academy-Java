@@ -7,7 +7,7 @@ public class Exercise12_29 {
         for (String s : args) {
             File file = new File(s);
             StringBuilder sb1 = new StringBuilder(s);
-            if (s.matches("Exercise\\d_\\d")) {
+            if (s.matches("Exercise\\d+_\\d")) {
                 int n = s.indexOf("_");
                 sb1.insert(n + 1, 0);
             }
