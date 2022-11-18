@@ -10,10 +10,15 @@ public class Exercise12_26 {
 
         File directory = new File(input.nextLine());
 
+        if (directory.exists()) {
+            System.out.println("Directory already exists!");
+            System.exit(1);
+        }
+
         if (directory.mkdirs())
             System.out.println("Directory created successfully");
         else
-            System.out.println("Directory already exists!");
+            System.out.println("There is a problem!");
 
     }
 }
