@@ -45,6 +45,7 @@ public class Exercise12_27 {
                 Scanner input = new Scanner(file)
         ){while (input.hasNext()){
             s = input.nextLine() + "\n";
+           // There is smt wrong!
             if (s.matches("Exercise\\d_\\d")){
                 sb1.append(s.replaceAll("Exercise\\d_\\d", "Exercise0\\d_0\\d"));
             } else if ((s.contains("Exercise\\d_\\d+"))) {
